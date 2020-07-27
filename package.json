@@ -1,0 +1,15 @@
+{
+  "name": "distort",
+  "version": "1.0.0",
+  "description": "Corrupts images",
+  "main": "distort.js",
+  "scripts": {
+    "start": "node distort.js"
+  },
+  "keywords": [],
+  "author": "pBinarySoul",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
