@@ -33,6 +33,10 @@ const main = () => {
 	let imagePath, imageName, imageExt;
 
 	let filePath = rl.question("Enter image path> ");
+	if ( !fs.existsSync(filePath) ) {
+		console.log("No such file found!");
+		return;
+	}
 	let maxErrors = parseInt(rl.question("Enter maximum errors> ")) || MAX_ERRORS;
 	imageName = path.basename(filePath);
 	imageExt = path.extname(imageName);
